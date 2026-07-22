@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        legend {
+            font-size: larger;
+
+        }
+
+        /* legend mark{
+             color:white;
+             background-color: black;
+        } */
+
+        .form {
+            border-radius: 20px;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: left;
+            background: rgb(197, 213, 229);
+            width: 23%;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: auto;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .btn {
+           display: flex;
+           justify-content: center;
+           gap: 25px;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white
+        }
+
+        .option-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 6px;
+        }
+
+        .option-group input {
+            width: auto;
+            margin: 0;
+        }
+
+        .option-group label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="form">
+        <legend><b><mark>Student Registration Form</mark></b></legend>
+        <form action="/submit" class="detail">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required name="name">
+            <br><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="Enter Email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" maxlength="10" name="phono no.">
+            <br><br>
+
+            <label for="m">Gender:</label>
+            <div class="option-group">
+                <input type="radio" id="m" name="gender" value="male">
+                <label for="m">Male</label>
+                <input type="radio" id="f" name="gender" value="female">
+                <label for="f">Female</label>
+                <input type="radio" id="o" name="gender" value="other">
+                <label for="o">Other</label>
+            </div>
+            <br><br>
+
+            <label for="course">Course:</label>
+            <select name="Course" id="course">
+                <option value="">Select Your Course</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="btech">BTech</option>
+            </select>
+            <br><br>
+
+            <label for="add">Address:</label>
+            <br>
+            <textarea id="add" rows="4" cols="30" name="Address"
+                placeholder="Please enter your full address"></textarea>
+            <br><br>
+
+            <label for="music">Hobbies:</label>
+            <div class="option-group">
+                <input type="checkbox" id="music" name="hobby" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobby" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="read" name="hobby" value="reading">
+                <label for="read">Reading</label>
+            </div>
+
+            <br><br>
+
+            <div class="btn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
