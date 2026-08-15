@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="login">
+        <form action="/action">
+            <h1>Login</h1>
+
+           <div class="input">
+             <input type="text" placeholder="username" name="username">
+             <i class="fa-solid fa-user"></i>
+
+           </div>
+            <br>
+           <div class="input">
+             <input type="password" placeholder="password" name="psd">
+             <i class="fa-solid fa-lock"></i>
+           </div>
+            <br>
+
+            <!-- not use like these -->
+           <!-- <div class="remember">
+             <input type="checkbox" id="recall" checked>
+            <label for="recall">Remember Me <a href="/forgot">Forgot Password</a></label>
+           </div> -->
+
+            <div class="remember">
+                <label for="recall">
+                    <input type="checkbox" id="recall" checked>
+                    Remember Me 
+                </label>
+                <a href="/forgot">Forgot Password</a>
+            </div>
+
+            <br>
+            <button class="btn" type="submit">Login</button>
+
+            <div class="link">
+                <p>Dont have an account? <a href="/register">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
