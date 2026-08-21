@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blueviolet;
+    height: 110vh;
+    width: 110%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url("Comp.avif");
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+
+.icon {
+    background-color: rgba(4, 98, 153, 0.855);
+    height: 330px;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.icon img {
+    height: 160px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px black solid;
+}
+
+.icon h2 {
+    margin-top: 4px;
+    /* font-style: italic; */
+    padding: 2%;
+}
+
+.icon p {
+    padding: 7%;
+    margin-top: 3px;
+    font-style: italic;
+}
+
+.icon:hover {
+    background-color: rgba(245, 245, 245, 0.775);
+}
+
+/* .icon:hover{
+    color:white;
+} */
+
+.links {
+    width: 160px;
+    margin: 20PX;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2 em;
+}
+
+.links a {
+    color: black;
+    font-size: 25px;
+}
